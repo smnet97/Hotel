@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="800.0" prefWidth="650.0" style="-fx-background-color: #001837;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.registrationController.RegistrationConreoller">
+    <children>
+        <VBox prefHeight="792.0" prefWidth="650.0">
+            <children>
+            <HBox prefHeight="76.0" prefWidth="650.0">
+               <children>
+                  <ImageView fitHeight="95.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/Безназвания.png" />
+                     </image>
+                  </ImageView>
+                      <Label alignment="CENTER" prefHeight="103.0" prefWidth="357.0" text="Ro'yxatdan o'tish" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold" size="30.0" />
+                          </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                      </Label>
+               </children></HBox>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="15.0" />
+                    </VBox.margin>
+                </Separator>
+                <Label alignment="BASELINE_CENTER" prefHeight="40.0" prefWidth="650.0" text="Shaxsiy ma'lumotlar." textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.0" minWidth="10.0" prefWidth="208.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.0" minWidth="10.0" prefWidth="20.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="0.0" prefWidth="182.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="19.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="215.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="name" alignment="CENTER" prefHeight="30.0" prefWidth="117.0" promptText="Ismi">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets></TextField>
+                        <TextField fx:id="surname" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="167.0" promptText="Familyasi" GridPane.columnIndex="2">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                        <TextField fx:id="middleName" alignment="CENTER" layoutX="177.0" layoutY="10.0" prefHeight="30.0" prefWidth="167.0" promptText="Sharifi" GridPane.columnIndex="4">
+                            <font>
+                                <Font size="14.0" />
+                            </font></TextField>
+                        <Label alignment="CENTER" contentDisplay="TOP" prefHeight="29.0" prefWidth="198.0" text="Ismi" textFill="WHITE" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="41.0" prefHeight="29.0" prefWidth="181.0" text="Familyasi" textFill="#f8f8f8" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="41.0" prefHeight="29.0" prefWidth="215.0" text="Sharifi" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="15.0" right="15.0" />
+                    </padding>
+                </GridPane>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="184.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.0" minWidth="10.0" prefWidth="436.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <padding>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                    </padding>
+                    <children>
+                        <Label prefHeight="20.0" prefWidth="119.0" text="Pasport raqami: " textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="60.0" />
+                     </GridPane.margin></Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="pasport" prefHeight="31.0" prefWidth="284.0" promptText="AA1234567">
+                           <HBox.margin>
+                              <Insets right="150.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children></HBox>
+                    </children>
+                </GridPane>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="15.0" />
+                    </VBox.margin>
+                </Separator>
+                <Label alignment="BASELINE_CENTER" prefHeight="40.0" prefWidth="650.0" text="Aloqa ma'lumotlari" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <GridPane prefHeight="145.0" prefWidth="650.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="181.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="492.0" minWidth="10.0" prefWidth="439.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <padding>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                    </padding>
+                    <children>
+                        <Label prefHeight="54.0" prefWidth="130.0" text="Email:" textFill="WHITE">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="120.0" />
+                     </GridPane.margin>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="32.0" prefHeight="29.0" prefWidth="130.0" text="Telefoni:" textFill="WHITE" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                     <GridPane.margin>
+                        <Insets left="105.0" />
+                     </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="phone" prefHeight="31.0" prefWidth="290.0" promptText="+99897777777" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets right="150.0" />
+                            </GridPane.margin>
+                        </TextField>
+                  <TextField fx:id="email" onMouseExited="#onEmail" prefHeight="31.0" prefWidth="284.0" promptText="emailName@gmail.com" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets right="150.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label fx:id="email_error" prefHeight="19.0" prefWidth="288.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="15.0" />
+                    </VBox.margin>
+                </Separator>
+            <GridPane prefHeight="129.0" prefWidth="650.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="196.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="466.0" minWidth="10.0" prefWidth="454.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="login" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets right="150.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="parol" layoutX="199.0" layoutY="12.0" prefHeight="31.0" prefWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="150.0" />
+                     </GridPane.margin></TextField>
+                  <Label prefHeight="17.0" prefWidth="92.0" text="Login :" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="120.0" />
+                     </GridPane.margin></Label>
+                  <Label layoutX="25.0" layoutY="45.0" prefHeight="17.0" prefWidth="92.0" text="Parol :" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="120.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </GridPane>
+                <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSave" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #001837; -fx-border-color: #fffafa; -fx-border-radius: 100; -fx-border-width: 2px; -fx-text-fill: white; -fx-font-size: 2em; -fx-font-weight: bold;" text="Saqlash">
+                    <VBox.margin>
+                        <Insets left="220.0" top="50.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+                </Button>
+            </children></VBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

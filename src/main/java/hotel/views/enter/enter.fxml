@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="790.0" style="-fx-background-color: #358596;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.enterController.EnterController">
+   <children>
+      <Pane prefHeight="151.0" prefWidth="800.0" style="-fx-background-color: #001837;">
+         <children>
+            <Text fill="WHITE" layoutX="282.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HIlton" textAlignment="CENTER" wrappingWidth="235.9999998807907">
+               <font>
+                  <Font name="A CAPPELLA" size="64.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="281.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H  O  T  E  L" textAlignment="CENTER" wrappingWidth="234.572265625">
+               <font>
+                  <Font name="Lato Regular" size="30.0" />
+               </font>
+            </Text>
+            <Separator layoutX="297.0" layoutY="79.0" prefHeight="2.0" prefWidth="205.0" />
+            <VBox layoutX="645.0" layoutY="38.0" prefHeight="57.0" prefWidth="141.0" />
+            <Button fx:id="registrationButton" layoutX="646.0" layoutY="97.0" mnemonicParsing="false" onAction="#onRegistration" prefHeight="41.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Ro'yxatdan o'tish" textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="-3.0" layoutY="477.0" prefHeight="123.0" prefWidth="807.0" style="-fx-background-color: #001837;">
+         <children>
+            <Text fill="WHITE" layoutX="166.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manzil: Toshkent sh. M.Ulug'bek tumani. Mustaqillik ko'chasi 7-uy." textAlignment="CENTER" wrappingWidth="503.48828125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="166.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel: +99877 777- 07-07 ,   +99877 100-10-01, +99897 707-17-17" textAlignment="CENTER" wrappingWidth="503.48828125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="168.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: hilton@gmail.com" textAlignment="CENTER" wrappingWidth="503.48828125">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="enter" layoutX="283.0" layoutY="366.0" mnemonicParsing="false" onAction="#onEnter" opacity="0.78" prefHeight="32.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-background-radius: 100; -fx-text-fill: white; -fx-border-color: white; -fx-border-radius: 100; -fx-border-width: 2px;" text="&gt;   Kirish" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="userName" layoutX="326.0" layoutY="245.0" prefHeight="34.0" prefWidth="200.0" promptText="user name" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="326.0" layoutY="300.0" prefHeight="34.0" prefWidth="200.0" promptText="password" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="passwordText" layoutX="326.0" layoutY="300.0" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="283.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../photos/avatar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="39.0" layoutX="283.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../photos/password.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkBox" layoutX="533.0" layoutY="317.0" mnemonicParsing="false" onAction="#onShowPassword" />
+      <Label fx:id="lblErrors" layoutX="326.0" layoutY="340.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</AnchorPane>

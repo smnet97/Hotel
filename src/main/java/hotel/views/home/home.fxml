@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.homeController.HomeController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <HBox prefHeight="123.0" prefWidth="800.0">
+               <children>
+                  <Pane prefHeight="123.0" prefWidth="805.0" style="-fx-background-color: #001837;">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="153.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/Безназвания.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="292.0" layoutY="97.0" prefHeight="53.0" prefWidth="217.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 3px;">
+               <children>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bosh sahifa">
+                     <font>
+                        <Font name="Airbnb Cereal App Black" size="28.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 5px;">
+               <children>
+                  <Button fx:id="roomServices" alignment="BOTTOM_CENTER" layoutY="23.0" mnemonicParsing="false" onAction="#onRoomAction" prefHeight="155.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Xona xizmatlari" textFill="WHITE">
+                     <font>
+                        <Font name="Airbnb Cereal App Black" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="51.0" layoutY="23.0" onMouseClicked="#onRoomActionImg" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/covered-food-tray-on-a-hand-of-hotel-room-service.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="44.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 4px;">
+               <children>
+                  <Button fx:id="bookingRoom" alignment="BOTTOM_CENTER" layoutY="23.0" mnemonicParsing="false" onAction="#onActionRoomBooking" prefHeight="155.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Xonani bron qilish" textFill="WHITE">
+                     <font>
+                        <Font name="Airbnb Cereal App Black" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="51.0" layoutY="26.0" onMouseClicked="#onActionRoomBookingImg" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/key.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="552.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 5px;">
+               <children>
+                  <Button fx:id="restoran" alignment="BOTTOM_CENTER" layoutY="23.0" mnemonicParsing="false" onAction="#onRestoran" prefHeight="155.0" prefWidth="200.0" style="-fx-background-color: transparent;" text="Restoran joy bron qilish" textFill="WHITE">
+                     <font>
+                        <Font name="Airbnb Cereal App Black" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="51.0" layoutY="23.0" onMouseClicked="#onRestoranImg" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/restaurant.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane layoutX="-2.0" layoutY="477.0" prefHeight="139.0" prefWidth="806.0" style="-fx-background-color: #001837;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="300.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/013-twitter-1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="351.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/011-instagram.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="403.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/008-youtube.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="455.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/001-facebook.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

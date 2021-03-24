@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #001837;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.breakfastController.BrekfastController">
+   <children>
+      <Label layoutX="199.0" layoutY="25.0" text="Xonaga nonushta chaqirish xizmati." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="23.0" layoutY="61.0" prefHeight="417.0" prefWidth="360.0" style="-fx-border-color: white; -fx-border-width: 2px;">
+         <children>
+            <Label layoutX="126.0" layoutY="3.0" text="Tavomnoma" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="17.0" layoutY="26.0" prefHeight="390.0" prefWidth="327.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="189.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="0.0" prefWidth="20.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="84.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="207.0" text="1. Qovirlgan(tuxum, kalbasa, sasiska)" textFill="WHITE" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="2. Blinchik" textFill="WHITE" GridPane.rowIndex="1" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="3. qaymoq" textFill="WHITE" GridPane.rowIndex="2" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="4. Assartin mix." textFill="WHITE" GridPane.rowIndex="3" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="5. 1 st sut" textFill="WHITE" GridPane.rowIndex="4" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="6. Non (tandir non)" textFill="WHITE" GridPane.rowIndex="5" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="7. Non assarti" textFill="WHITE" GridPane.rowIndex="6" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="8. Coffe americano" textFill="WHITE" GridPane.rowIndex="7" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="9. Coffe copichino" textFill="WHITE" GridPane.rowIndex="8" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="10. Choy ko'k" textFill="WHITE" GridPane.rowIndex="9" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="11. Choy qora" textFill="WHITE" GridPane.rowIndex="10" />
+                  <Label prefHeight="17.0" prefWidth="207.0" text="12. Choy qora limon" textFill="WHITE" GridPane.rowIndex="11" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <CheckBox mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <ComboBox id="tmp" fx:id="temp" editable="true" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="13.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="43.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="43.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="43.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="43.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="43.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="43.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="223.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="223.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="223.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                  <ComboBox fx:id="temp" layoutX="255.0" layoutY="313.0" prefHeight="25.0" prefWidth="35.0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Label layoutX="395.0" layoutY="188.0" text="Jami narxi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="189.0" prefHeight="25.0" prefWidth="84.0" text="Label">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="237.0" text="Qachonga ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="286.0" text="Soat nechiga ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="570.0" layoutY="242.0" prefHeight="28.0" prefWidth="116.0" promptText="Sanasi" />
+      <TextField layoutX="571.0" layoutY="286.0" prefHeight="28.0" prefWidth="116.0" promptText="Vaqti" />
+      <Button layoutX="449.0" layoutY="394.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="180.0" style="-fx-background-color: #001837; -fx-border-color: white; -fx-border-width: 2px;" text="Buyurtma berish" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="home" layoutX="614.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHome" prefHeight="134.0" prefWidth="163.0" style="-fx-background-color: #001837;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="678.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../photos/home.png" />
+         </image>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

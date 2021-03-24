@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.servicesController.ServicesController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="800.0" spacing="15.0" style="-fx-background-color: #001837;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../photos/Безназвания.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="nonushta" mnemonicParsing="false" onAction="#onBreakfast" prefHeight="104.0" prefWidth="200.0" style="-fx-background-color: #001837; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px;" text="Nonushta" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="tushlik" mnemonicParsing="false" onAction="#onDine" prefHeight="101.0" prefWidth="200.0" style="-fx-background-color: #001837; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px;" text="Tushlik" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="kechkiOvqat" mnemonicParsing="false" onAction="#onDinner" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #001837; -fx-border-color: white; -fx-border-width: 0px 2px 0px 2px;" text="Kechki ovqat" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 5px;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="235.0" fitWidth="252.0" layoutX="283.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../photos/covered-food-tray-on-a-hand-of-hotel-room-service.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="283.0" layoutY="280.0" text="Xona xizmati" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children></Pane>
+   </center>
+</BorderPane>

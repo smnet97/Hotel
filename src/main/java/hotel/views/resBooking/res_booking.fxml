@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.resBookingController.ResBookingController">
+    <children>
+        <HBox prefHeight="123.0" prefWidth="800.0">
+            <children>
+                <Pane prefHeight="123.0" prefWidth="805.0" style="-fx-background-color: #001837;">
+                    <children>
+                        <ImageView fitHeight="112.0" fitWidth="153.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../photos/Безназвания.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+      <Pane layoutX="469.0" layoutY="122.0" prefHeight="479.0" prefWidth="331.0" style="-fx-border-color: #001837; -fx-border-width: 0px 0px 0px 5px; -fx-background-color: #ffffff;">
+         <children>
+            <DatePicker fx:id="date" layoutX="190.0" layoutY="90.0" prefHeight="25.0" prefWidth="106.0" promptText="Sanani kiriting" />
+            <ComboBox fx:id="tableSize" layoutX="189.0" layoutY="182.0"  prefHeight="25.0" prefWidth="106.0" />
+            <Text layoutX="25.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restoranda joy bron qilish" wrappingWidth="192.49996948242188">
+               <font>
+                  <Font name="Airbnb Cereal App Black" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="23.0" fitWidth="125.0" layoutX="189.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../photos/cards.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="27.0" layoutY="290.0" prefHeight="23.0" prefWidth="162.0" text="Karta ma'lumotlari :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="85.0" prefHeight="36.0" prefWidth="120.0" text="Kuni kiriting :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="132.0" prefHeight="36.0" prefWidth="150.0" text="Vaqtini kiriting :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="176.0" prefHeight="36.0" prefWidth="150.0" text="Odam soni :">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cartNumber" layoutX="179.0" layoutY="336.0" prefHeight="25.0" prefWidth="106.0" promptText="8600 .... .... ...." />
+            <TextField fx:id="cardDate" layoutX="179.0" layoutY="382.0" prefHeight="25.0" prefWidth="106.0" promptText="02/24" />
+            <Label layoutX="27.0" layoutY="335.0" text="Karta raqanmi :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="381.0" text="Karta muddati :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="save" layoutX="104.0" layoutY="421.0" mnemonicParsing="false" onAction="#onSave" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #34cd5d;" text="Saqlash" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="time" layoutX="189.0" layoutY="138.0" prefHeight="25.0" prefWidth="106.0" promptText="07:00" />
+         </children></Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutY="122.0" prefHeight="479.0" prefWidth="468.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="450.0">
+               <children>
+                  <HBox layoutY="1.0" prefHeight="123.0" prefWidth="456.0" spacing="15.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249189622.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249722547.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="135.0" prefHeight="123.0" prefWidth="456.0" spacing="15.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249724485.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249723411.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="279.0" prefHeight="123.0" prefWidth="456.0" spacing="15.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249723386.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249724523.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="424.0" prefHeight="123.0" prefWidth="456.0" spacing="15.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249722552.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../photos/249723411.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow spread="0.6" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+    </children>
+</Pane>

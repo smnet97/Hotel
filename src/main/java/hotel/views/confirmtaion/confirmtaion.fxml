@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.roomBookingController.RoomBookingController">
+    <children>
+        <HBox prefHeight="123.0" prefWidth="500.0">
+            <children>
+                <Pane prefHeight="123.0" prefWidth="505.0" style="-fx-background-color: #001837;">
+                    <children>
+                        <ImageView fitHeight="112.0" fitWidth="153.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../photos/Безназвания.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+        <Pane layoutX="150.0" layoutY="101.0" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 3px;">
+            <children>
+                <Text fill="WHITE" layoutX="37.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tasdiqlash">
+                    <font>
+                        <Font name="Airbnb Cereal App Black" size="24.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Text>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect></Pane>
+        <Pane layoutX="25.0" layoutY="178.0" prefHeight="200.0" prefWidth="450.0" style="-fx-border-color: #001837; -fx-border-width: 5px; -fx-background-color: #ffffff;">
+            <children>
+                <Pane layoutX="150.0" layoutY="-15.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #001837; -fx-border-width: 3px;">
+                    <children>
+                        <Text layoutX="12.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xona ma'lumotlari">
+                            <font>
+                                <Font name="Airbnb Cereal App Black" size="14.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Pane>
+            <Label layoutX="21.0" layoutY="35.0" prefHeight="20.0" prefWidth="90.0" text="Xona turi:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="63.0" prefHeight="20.0" prefWidth="90.0" text="Xona hajmi:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="90.0" prefHeight="20.0" prefWidth="90.0" text="Kirish sanasi:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="118.0" prefHeight="20.0" prefWidth="90.0" text="Ketish sanasi:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="35.0" text="Jammi kunlar soni:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="63.0" text="Xona raqami:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="90.0" text="1 kunlik xona narxi:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="238.0" layoutY="118.0" text="Umumiy narx:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="222.0" layoutY="32.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="10.0" />
+            <Label fx:id="viewRoomType" layoutX="121.0" layoutY="35.0" prefHeight="20.0" prefWidth="90.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewRoomSize" layoutX="121.0" layoutY="63.0" prefHeight="20.0" prefWidth="90.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewGiveDate" layoutX="121.0" layoutY="90.0" prefHeight="20.0" prefWidth="90.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewDueDate" layoutX="121.0" layoutY="118.0" prefHeight="20.0" prefWidth="90.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewNumberDays" layoutX="380.0" layoutY="35.0" prefHeight="20.0" prefWidth="58.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewRoomNumber" layoutX="380.0" layoutY="63.0" prefHeight="20.0" prefWidth="58.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewCost" layoutX="380.0" layoutY="90.0" prefHeight="20.0" prefWidth="58.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPrice" layoutX="380.0" layoutY="118.0" prefHeight="20.0" prefWidth="58.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+          <Button fx:id="saveButton" layoutX="325.0" layoutY="442.0" mnemonicParsing="false" onAction="#onSaveRoomBooking" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #34cd5d;" text="Saqlash" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="20.0" />
+              </font>
+              <cursor>
+                  <Cursor fx:constant="HAND" />
+              </cursor>
+              <effect>
+                  <DropShadow />
+              </effect>
+          </Button>
+      <Button fx:id="cancel" layoutX="150.0" layoutY="442.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #858585;" text="Bekor qilish" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+    </children>
+</Pane>

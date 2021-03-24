@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.roomBookingController.RoomBookingController">
+    <children>
+        <HBox prefHeight="123.0" prefWidth="800.0">
+            <children>
+                <Pane prefHeight="123.0" prefWidth="805.0" style="-fx-background-color: #001837;">
+                    <children>
+                        <ImageView fitHeight="112.0" fitWidth="153.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../photos/Безназвания.png" />
+                            </image>
+                        </ImageView>
+                  <Button fx:id="home" layoutX="684.0" layoutY="35.0" mnemonicParsing="false" onAction="#onActionHome" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #001837;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="689.0" layoutY="40.0" onMouseClicked="#onActionHome1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../photos/home.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.3">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color></DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+        <Pane layoutX="263.0" layoutY="96.0" prefHeight="55.0" prefWidth="276.0" style="-fx-background-color: #358596; -fx-border-color: #001837; -fx-border-width: 3px;">
+            <children>
+                <Text fill="WHITE" layoutX="30.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xona bron qilish">
+                    <font>
+                        <Font name="Airbnb Cereal App Black" size="28.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Text>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect></Pane>
+        <Pane layoutX="-2.0" layoutY="477.0" prefHeight="123.0" prefWidth="805.0" style="-fx-background-color: #001837;">
+            <children>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="300.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../photos/013-twitter-1.png" />
+                    </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+                </ImageView>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="351.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../photos/011-instagram.png" />
+                    </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+                </ImageView>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="403.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../photos/008-youtube.png" />
+                    </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+                </ImageView>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="455.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../photos/001-facebook.png" />
+                    </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+                </ImageView>
+            </children></Pane>
+        <Pane layoutX="14.0" layoutY="186.0" prefHeight="270.0" prefWidth="400.0" style="-fx-border-color: #001837; -fx-border-width: 5px; -fx-background-color: #ffffff;">
+            <children>
+                <Pane layoutX="107.0" layoutY="-20.0" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: #ffffff; -fx-border-color: #001837; -fx-border-width: 3px;">
+                    <children>
+                        <Text layoutX="13.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xona ma'lumotlari">
+                            <font>
+                                <Font name="Airbnb Cereal App Black" size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Pane>
+                <Label layoutX="14.0" layoutY="48.0" prefHeight="36.0" prefWidth="96.0" text="Xona turi :">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="125.0" text="Xona hajm :">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="160.0" text="Belgilangan san :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="199.0" text="Qo'shimcha san :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="16.0" layoutY="233.0" text="Xona ID :">
+                    <font>
+                        <Font name="Arial Bold" size="18.0" />
+                    </font>
+                </Label>
+                <RadioButton fx:id="birinchiKlass" layoutX="133.0" layoutY="31.0" mnemonicParsing="false" onAction="#onChangeClass" prefHeight="40.0" prefWidth="100.0" selected="true" text="Birinchi klass">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="roomType" />
+                    </toggleGroup></RadioButton>
+                <RadioButton fx:id="turistikKlass" layoutX="271.0" layoutY="31.0" mnemonicParsing="false" onAction="#onChangeClass" prefHeight="40.0" prefWidth="100.0" text="Turistlik klass" toggleGroup="$roomType" />
+                <RadioButton fx:id="iqtisodKlass" layoutX="133.0" layoutY="61.0" mnemonicParsing="false" onAction="#onChangeClass" prefHeight="40.0" prefWidth="100.0" text="Iqtisod klass" toggleGroup="$roomType" />
+                <RadioButton fx:id="lyuksKlass" layoutX="271.0" layoutY="61.0" mnemonicParsing="false" onAction="#onChangeClass" prefHeight="40.0" prefWidth="100.0" text="Lyuks klass" toggleGroup="$roomType" />
+                <Separator layoutX="251.0" layoutY="32.0" orientation="VERTICAL" prefHeight="68.0" prefWidth="14.0" />
+                <Separator layoutX="117.0" layoutY="32.0" orientation="VERTICAL" prefHeight="68.0" prefWidth="14.0" />
+                <DatePicker fx:id="giveDate" layoutX="161.0" layoutY="159.0" prefHeight="25.0" prefWidth="206.0" />
+                <DatePicker fx:id="dueDate" layoutX="161.0" layoutY="198.0" prefHeight="25.0" prefWidth="206.0" />
+                <ComboBox fx:id="roomID" layoutX="161.0" layoutY="231.0" onAction="#onRoomId" prefHeight="25.0" prefWidth="206.0" />
+            <ComboBox fx:id="room_size" layoutX="161.0" layoutY="123.0" onAction="#onRoomSize" prefHeight="25.0" prefWidth="206.0" />
+            </children></Pane>
+        <Pane layoutX="430.0" layoutY="186.0" prefHeight="270.0" prefWidth="349.0" style="-fx-border-color: #001837; -fx-border-width: 5px; -fx-background-color: #ffffff;">
+            <children>
+                <ImageView fitHeight="24.0" fitWidth="198.0" layoutX="185.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../photos/cards.png" />
+                    </image>
+                </ImageView>
+                <Pane layoutX="107.0" layoutY="-20.0" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #ffffff; -fx-border-color: #001837; -fx-border-width: 3px;">
+                    <children>
+                        <Text layoutX="13.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xona to'lovi">
+                            <font>
+                                <Font name="Airbnb Cereal App Black" size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Pane>
+                <Label layoutX="14.0" layoutY="37.0" prefHeight="23.0" prefWidth="162.0" text="Karta ma'lumotlari :">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="86.0" text="Karta raqanmi :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="122.0" text="Karta muddati :">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="cardNumber" accessibleHelp="salom" layoutX="147.0" layoutY="87.0" prefHeight="24.0" prefWidth="170.0" promptText="8600 .... .... ...." />
+                <TextField fx:id="cardDate" layoutX="147.0" layoutY="123.0" prefHeight="24.0" prefWidth="170.0" promptText="02/24" />
+                <Button fx:id="saqlashButton" layoutX="110.0" layoutY="199.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #34cd5d;" text="Keyingi" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</Pane>

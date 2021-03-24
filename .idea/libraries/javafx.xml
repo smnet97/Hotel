@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="javafx">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PATH_TO_FX$/javafx.base" />
+      <root url="file://$PATH_TO_FX$/javafx.controls" />
+      <root url="file://$PATH_TO_FX$/javafx.fxml" />
+      <root url="file://$PATH_TO_FX$/javafx.graphics" />
+      <root url="file://$PATH_TO_FX$/javafx.media" />
+      <root url="file://$PATH_TO_FX$/javafx.swing" />
+      <root url="file://$PATH_TO_FX$/javafx.web" />
+    </SOURCES>
+  </library>
+</component>

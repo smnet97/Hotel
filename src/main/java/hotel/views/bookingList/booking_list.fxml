@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.geometry.*?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+        <?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #001837;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.controllers.bookingListController.BookingListController">
+<children>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Label alignment="CENTER" prefHeight="111.0" prefWidth="697.0" text="Bron qilingan xonalar ro'yxati." textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="27.0" />
+            </font>
+         </Label>
+         <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Button fx:id="delete" mnemonicParsing="false" onAction="#onDelete" prefHeight="25.0" prefWidth="99.0" text="O'chirish.">
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin></Button>
+            </children>
+         </VBox>
+      </children></HBox>
+   <TableView fx:id="tableBooking" prefHeight="499.0" prefWidth="800.0" />
+</children>
+</VBox>
